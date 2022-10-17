@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700&subset=latin");
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid: 100vh / 1fr;
+  place-items: center;
+}
+
+h1 {
+  font: 10vmin/0.8 "Libre Franklin";
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  color: #fff4;
+  text-shadow: 0 0 5px #fff;
+  mix-blend-mode: overlay;
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;}
