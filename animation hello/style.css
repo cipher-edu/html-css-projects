@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");s
 html,
 body {
   height: 100vh;
@@ -40,17 +40,17 @@ body {
 .background1 {
   left: 12.5%;
   height: 100vh;
-  background-color: #ebc247;
+  background-color: hwb(45 30% 44%);
 }
 .background2 {
   left: 25%;
   height: 100vh;
-  background-color: #99eb47;
+  background-color: #eb4747;
 }
 .background3 {
   left: 37.5%;
   height: 100vh;
-  background-color: #47eb70;
+  background-color: #eb4747;
 }
 .background4 {
   left: 50%;
