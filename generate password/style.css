@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+body {
+  font-family: 'Walter Turncoat', cursive;
+  background: #f2f2f2;
+}
+
+.form {
+  background: #f2f2f2;
+  box-shadow: 0px -6px 10px rgba(255, 255, 255, 1), 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  padding: 20px;
+  transform: translate(-50%,-50%);
+}
+
+input {
+  font-family: 'Walter Turncoat', cursive;
+  background: #f2f2f2;
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px -6px 10px rgba(255, 255, 255, 1), 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border: none;
+  padding: 3px;
+  margin-left: 30px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 30px;
+  background: #f2f2f2;
+  box-shadow: 0px -6px 10px rgba(255, 255, 255, 1), 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border: none;
+  width: 130px;
+  height: 45px;
+  color: black;
+  text-align: center; 
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.copy {
+  margin-left: 85px
+}
+
+#button:hover {
+  box-shadow: inset 5px 6px 10px rgba(255, 255, 255, 0.3), inset -5px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
