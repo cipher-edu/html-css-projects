@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #e8eaf6;
+}
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s;
+  z-index: 1;
+}
+.loader {
+  filter: url("#goo");
+  display: flex;
+  justify-content: center;
+}
+.circle,
+.circle--center {
+  background-color: #2136b5;
+  border-radius: 50%;
+}
+.circle--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  scale: 0.7;
+  -webkit-animation: 9s 1.5s grow forwards linear;
+          animation: 9s 1.5s grow forwards linear;
+  z-index: 1;
+}
+.circle--center .text {
+  margin-left: 4px;
+  color: #fff;
+}
+.circle {
+  position: absolute;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.circle.circle--1 {
+  transform: translate(0, -180px);
+  -webkit-animation: 3s 0s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+          animation: 3s 0s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+.circle.circle--2 {
+  transform: translate(127px, -127px);
+  -webkit-animation: 3s 1.5s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+          animation: 3s 1.5s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+.circle.circle--3 {
+  transform: translate(180px, 0);
+  -webkit-animation: 3s 3s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+          animation: 3s 3s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+.circle.circle--4 {
+  transform: translate(127px, 127px);
+  -webkit-animation: 3s 4.5s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+          animation: 3s 4.5s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+.circle.circle--5 {
+  transform: translate(0, 180px);
+  -webkit-animation: 3s 6s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+          animation: 3s 6s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+.circle.circle--6 {
+  transform: translate(-127px, 127px);
+  -webkit-animation: 3s 7.5s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+          animation: 3s 7.5s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+.circle.circle--7 {
+  transform: translate(-180px, 0px);
+  -webkit-animation: 3s 9s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+          animation: 3s 9s circle forwards cubic-bezier(0.4, 0, 0.2, 1);
+}
+@-webkit-keyframes circle {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes grow {
+  from {
+    scale: 0.7;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+@keyframes grow {
+  from {
+    scale: 0.7;
+  }
+  to {
+    scale: 1.5;
+  }
+}
