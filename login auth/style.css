@@ -1,0 +1,233 @@
+/***********************/
+/***********************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/***********************/
+/***********************/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+  background-color: #ebeff5;
+}
+
+.container {
+  position: relative;
+  width: 325px;
+}
+
+.svg-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.svg-icon:hover {
+  transform: scale(1.05);
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ffffff;
+}
+
+.login,
+.signup {
+  width: 100%;
+  display: grid;
+  grid-gap: 15px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
+}
+.login__icon,
+.signup__icon {
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: -0.025rem;
+  line-height: 1;
+}
+.login__title,
+.signup__title {
+  margin-bottom: 17.5px;
+  font-size: 1.424rem;
+  font-weight: bold;
+  letter-spacing: -0.075rem;
+  line-height: 1;
+}
+.login__title::first-letter,
+.signup__title::first-letter {
+  text-transform: capitalize;
+}
+.login__row,
+.signup__row {
+  display: grid;
+  grid-gap: 8px;
+}
+.login__label,
+.signup__label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.79rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.login__input, .login__button,
+.signup__input,
+.signup__button {
+  height: 40px;
+  font-size: 0.79rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.login__input,
+.signup__input {
+  padding: 0 17.5px;
+  background-color: transparent;
+}
+.login__button,
+.signup__button {
+  height: 45px;
+  font-size: 0.702rem;
+  letter-spacing: 0.075rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.login__link,
+.signup__link {
+  font-size: 0.702rem;
+  text-align: center;
+  cursor: pointer;
+}
+.login__link::first-letter,
+.signup__link::first-letter {
+  text-transform: capitalize;
+}
+
+.login {
+  background-color: #ffffff;
+}
+.login__icon {
+  color: #3f66ff;
+}
+.login__title {
+  color: #201568;
+}
+.login__label {
+  color: #201568;
+}
+.login__input, .login__button {
+  border: 1px solid #201568;
+  outline-color: #3f66ff;
+}
+.login__input {
+  color: #625a85;
+  caret-color: #3f66ff;
+}
+.login__input::placeholder {
+  color: #9791b4;
+}
+.login__button {
+  background-color: #201568;
+  color: #ffffff;
+}
+.login__link {
+  color: #b4afc9;
+}
+
+.signup {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 470px;
+  transform-origin: top right;
+  transition: 250ms;
+  background-color: #3f66ff;
+}
+.signup__wrapper {
+  width: 100%;
+  display: grid;
+  grid-gap: 15px;
+  visibility: visibility;
+  opacity: 1;
+  transition: 250ms cubic-bezier(0.17, 0.67, 0.68, 1.39) 100ms;
+}
+.signup__icon {
+  color: #ffffff;
+}
+.signup__title {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.signup__row--flex {
+  display: flex;
+  justify-content: space-between;
+}
+.signup__trigger--fixed {
+  position: absolute;
+  transition: 100ms cubic-bezier(0.17, 0.67, 0.68, 1.39) 400ms;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+.signup__label {
+  color: #ffffff;
+}
+.signup__input, .signup__button {
+  border: 1px solid #ffffff;
+  outline-color: #ffffff;
+}
+.signup__input {
+  color: rgba(255, 255, 255, 0.85);
+  caret-color: #ffffff;
+}
+.signup__input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.signup__button {
+  background-color: #ffffff;
+  color: #3f66ff;
+}
+.signup__link {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.is-form-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  width: 70px;
+  height: 70px;
+  transform: translateY(0);
+  overflow: hidden;
+  border-radius: 24px;
+  transform-origin: top right;
+  transition: 250ms cubic-bezier(0.17, 0.67, 0.68, 1.39) 100ms;
+}
+
+.is-wrapper-open {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: 250ms;
+}
+
+.is-trigger-hidden {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  right: -100%;
+  transition: 100ms cubic-bezier(0.15, 0.65, 0.65, 1.25);
+}
