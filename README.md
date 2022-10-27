@@ -7,4 +7,4 @@ Kodlar ro'yxati
 - password generatori 
 - ro'yxatga olish tizimi login page
 - menu dropdown & animation
-
+- social icons
